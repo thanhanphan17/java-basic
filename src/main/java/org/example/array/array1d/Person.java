@@ -1,4 +1,4 @@
-package org.example.array1d;
+package org.example.array.array1d;
 
 public class Person {
     private String name;

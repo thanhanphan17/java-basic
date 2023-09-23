@@ -1,4 +1,4 @@
-package org.example.array1d;
+package org.example.array.array1d;
 
 import java.util.Arrays;
 import java.util.Random;

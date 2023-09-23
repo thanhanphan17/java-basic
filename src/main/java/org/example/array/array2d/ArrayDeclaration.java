@@ -1,4 +1,4 @@
-package org.example.array2d;
+package org.example.array.array2d;
 
 public class ArrayDeclaration {
 
