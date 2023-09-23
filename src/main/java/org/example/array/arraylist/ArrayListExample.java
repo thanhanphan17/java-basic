@@ -3,7 +3,7 @@ package org.example.array.arraylist;
 import java.util.ArrayList;
 
 
-public class ArrayListUsage {
+public class ArrayListExample {
 
     public static void main(String[] args) {
         // generic
