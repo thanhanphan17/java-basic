@@ -19,9 +19,14 @@ import java.util.Scanner;
 public class RegexExample {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String str = scanner.nextLine();
+        System.out.print("Enter email: ");
+        String email = scanner.nextLine();
 
-        String regex = "[a-zA-Z]";
-        System.out.println(str.matches(regex));
+        System.out.println("Valid: " + isValidEmail(email));
+    }
+
+    public static boolean isValidEmail(String email) {
+        String emailRegexPattern = "^(.+)@(\\S+)$";
+        return email.matches(emailRegexPattern);
     }
 }
