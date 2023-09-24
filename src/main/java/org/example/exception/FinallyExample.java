@@ -1,4 +1,4 @@
-package org.exampleObject.exception;
+package org.example.exception;
 
 public class FinallyExample {
     public static void main(String[] args) {
