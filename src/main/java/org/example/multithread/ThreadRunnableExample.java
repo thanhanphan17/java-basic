@@ -1,6 +1,11 @@
 package org.example.multithread;
 
-public class ThreadRunnable {
+/*
+    - Implements Runnable interface
+    - Can extend from other classes
+    - Can share objects for multiple threads
+ */
+public class ThreadRunnableExample {
     public static void main(String[] args) {
         Thread thread1 = new Thread(new MyThreadRunnable("Thread 1"));
         Thread thread2 = new Thread(new MyThreadRunnable("Thread 2"));

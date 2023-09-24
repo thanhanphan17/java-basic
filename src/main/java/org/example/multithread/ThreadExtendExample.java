@@ -1,10 +1,15 @@
 package org.example.multithread;
 
-public class ThreadExample {
+/*
+    - Extends from Thread class
+    - Can not extend from other classes
+    - Each thread creates only one object linked to its
+ */
+public class ThreadExtendExample {
     public static void main(String[] args) {
         // Create two threads
-        PrintNumber thread1 = new PrintNumber("Thread 1");
-        PrintNumber thread2 = new PrintNumber("Thread 2");
+        MyThreadExtend thread1 = new MyThreadExtend("Thread 1");
+        MyThreadExtend thread2 = new MyThreadExtend("Thread 2");
 
         // Start the threads
         thread1.start();
@@ -14,10 +19,10 @@ public class ThreadExample {
     }
 }
 
-class PrintNumber extends Thread {
+class MyThreadExtend extends Thread {
     private final String threadName;
 
-    public PrintNumber(String threadName) {
+    public MyThreadExtend(String threadName) {
         this.threadName = threadName;
     }
 
